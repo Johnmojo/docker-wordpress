@@ -1,4 +1,4 @@
-* docker-wordpress *
+# docker-wordpress
 
 This is a simple template that can be used to quickly spin up a WordPress site using Docker.
 
