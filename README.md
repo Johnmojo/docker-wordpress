@@ -2,21 +2,21 @@
 
 This is a template that can be used to quickly spin up a WordPress site using Docker.
 
-1. Run `docker-compose up -d` to start the containers.
-2. Open `http://localhost:{YOUR_PORT_NUMBER}` in your browser.
-3. Profit.
+1. Clone the repo.
 
-Your .env should have the following:
+2. Create an .env file in the root directory with the following values:
 
 ```
-CONTAINER_NAME='wordpress'
-DB_ROOT_PASSWORD='admin'
-DB_NAME='wordpress'
-DB_USER='admin'
-DB_PASSWORD='admin'
-WORDPRESS_PORT=3000
-WORDPRESS_USER='admin'
-WORDPRESS_PASSWORD='admin'
+CONTAINER_NAME=wordpress
+HOST_PORT=3000
+DB_PORT=3306
+
+ROOT_PASSWORD=anyRootPassword
+DATABASE_NAME=wordpress-db
+USER=wpuser
+PASSWORD=databasePassword
 ```
 
-Change the values as you see fit.
+3. Run `docker-compose up -d` to start the containers.
+
+4. Open `http://localhost:3000` in your browser.
